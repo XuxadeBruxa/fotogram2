@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: inherit;
+    font-size: inherit;
+    background: inherit;
+    border: inherit;
+    font-family: "Figtree";
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url(./fonts/Figtree/Figtree-VariableFont_wght.ttf);
+}
+
+.content {
+    width: 100%;
+    max-width: 1440px;
+    height: fit-content;
+}
