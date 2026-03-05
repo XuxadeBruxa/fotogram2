@@ -54,7 +54,7 @@ function setImage() {
 
 function setData(){
     const dataRef = document.getElementById("changeData");
-    const dataName = popupImages[currentIndex].replace(".img/","");
+    const dataName = popupImages[currentIndex].replace("./img/","");
     dataRef.innerText = dataName;
 }
 // #endregion

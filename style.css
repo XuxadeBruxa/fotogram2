@@ -1,5 +1,4 @@
-.headercontent,
-.footercontent {
+.headercontent, .footercontent {
     width: 100%;
 }
 
@@ -22,11 +21,14 @@ body {
             align-items: center;
         }
 
+
+
         img {
             margin: 20px 0 20px 0;
         }
     }
-}/*main*/
+
+    /*main*/
     main {
         flex: 1;
         width: 100%;
@@ -72,25 +74,24 @@ body {
         }
     }
 
-
-/*footer*/
-footer {
-    flex: 0;
-    width: 100%;
-    background-color: #09212a;
-    display: flex;
-    justify-content: center;
-    padding: 24px 0 16px 0;
-    border-radius: 20% 20% 0 0;
-
-    section {
+    /*footer*/
+    footer {
+        flex: 0;
+        width: 100%;
+        background-color: #09212a;
         display: flex;
         justify-content: center;
-        align-items: center;
-    }
-}
+        padding: 24px 0 16px 0;
+        border-radius: 20% 20% 0 0;
 
-/*Dialog*/
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    /*Dialog*/
 
     dialog {
         margin: auto;
@@ -190,4 +191,3 @@ dialog::backdrop {
         text-align: center;
     }
 }
-
