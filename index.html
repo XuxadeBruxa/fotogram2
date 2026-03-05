@@ -8,21 +8,121 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="standart.css" />
         <link rel="shortcut icon" href="./img/Group.png" type="image/x-icon" />
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
     </head>
 
     <body>
-        <header>
+        <header class="headerconent">
             <div class="content">
                 <img src="./img/Capa_1.png" alt="Websitelogo Fotogram" />
             </div>
         </header>
 
         <main>
-            <section>
-                
+            <section class="content">
+                <h1>Dein persönliches Fotoalbum</h1>
+                <div>
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(0)"
+                        src="./img/Lake with Montain.jpg"
+                        alt="Fotografie von Bergen hinter einem See im Winter"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(1)"
+                        src="./img/Citylights.jpg"
+                        alt="Eine Stadt in der Abendstunde mit viel Beleuchtung"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(2)"
+                        src="./img/Wolken.png"
+                        alt="dunkle Wolken"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(3)"
+                        src="./img/Vogel.jpg"
+                        alt="Ein Vogel auf einem Ast"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(4)"
+                        src="./img/Erde.jpg"
+                        alt="Ein Bild der Erde von einem Satelliten aufgenommen"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(5)"
+                        src="./img/Mountain and Lake.jpg"
+                        alt="Ein See im Vordergrund, Berge im Hintergund mit Schnee bedeckt"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(6)"
+                        src="./img/Duck.jpg"
+                        alt="Eine Ente im Wasser die mit den Flügeln schlägt"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(7)"
+                        src="./img/Like a Dream.jpg"
+                        alt="Ein Mensch auf einem Felsen im Wasser der mit einer Taschenlampe in den Sternenhimmel leuchtet"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(8)"
+                        src="./img/Bird on a Stone.jpg"
+                        alt="Ein Vogel sitzt auf einem Stein"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(9)"
+                        src="./img/Baby Gepard.jpg"
+                        alt="Zwei Babygeparden auf einem Felsen voreinander schauen rechts an uns vorbei"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(10)"
+                        src="./img/Mountain.jpg"
+                        alt="Eine Berglandschaft mit Schnee auf den Gipfeln und einem klaren Himmel"
+                    />
+                    <img
+                        tabindex="0"
+                        onclick="openDialog(11)"
+                        src="./img/Winter.jpg"
+                        alt="Ein einzelner eingeschneiter komplett weißer Baum in einer Schneelandschaft"
+                    />
+                </div>
             </section>
         </main>
+
+        <dialog closedby="any" id="openPicture">
+            <header>
+                <span id="changeData">Bilddateiname</span>
+                <button tabindex="0" onclick="closeDialog()">
+                    <img
+                        src="./img/Property 1=Default (2).png"
+                        alt="x zum schließen des Fensters"
+                    />
+                </button>
+            </header>
+
+            <main>
+                <img id="changePicture" />
+            </main>
+
+            <footer class="footercontent">
+                <button onclick="prevImage()" tabindex="0">
+                    <img src="./img/links.png" alt="Zurück" />
+                </button>
+                <span id="continueCounter">nummern</span>
+                <button onclick="nextImage()" tabindex="0">
+                    <img src="./img/rechts.png" alt="Weiter" />
+                </button>
+            </footer>
+        </dialog>
 
         <footer>
             <section class="content">
